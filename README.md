@@ -307,7 +307,8 @@ Une fois la migration terminée, une vérification a été effectuée en listant
 🤖 **ChatGPT** – Apprentissage et accompagnement technique  
 *Utilisé pour :*  
 - Apprendre l’utilisation de PostgreSQL et comprendre ses bonnes pratiques.  
-- Compléter l’intégration de Flask avec la base de données.  
+- Compléter l’intégration de Flask avec la base de données.
+- Création du code pour faire insertion de 1Millions de joueurs avec Faker  
 
 🍃 **MongoDB Compass & PyMongo** – Migration vers MongoDB  
 *Utilisés pour :*  
