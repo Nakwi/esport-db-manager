@@ -17,7 +17,10 @@ Le projet se déroulera en **quatre étapes principales** :
 1.  **Modélisation Conceptuelle des Données (MCD)** : définition des entités et de leurs relations.  
 2.  **Modélisation Logique des Données (MLD)** : traduction du MCD en un modèle adapté aux bases relationnelles.  
 3.  **Création de la base de données sous PostgreSQL** : implémentation du schéma et des relations.  
-4.  **Intégration avec Flask** : développement d’une interface web pour interagir avec la base de données.  
+4.  **Intégration avec Flask** : développement d’une interface web pour interagir avec la base de données.
+5.  **Bonus 1** : Insertion massive des données.
+6.  **Bonus 2.1** : Génération d’un MLD pour une base orientée documents (MongoDB).
+7.  **Bonus 2.2** : Migration des données de PostgreSQL vers MongoDB.
 
 ---
 
