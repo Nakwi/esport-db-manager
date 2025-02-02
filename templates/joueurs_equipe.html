@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joueurs par Équipe</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-dark text-white">
+    <div class="container mt-5">
+        <h1 class="text-center text-warning">Joueurs de l'équipe {{ nom_equipe }}</h1>
+
+        {% if joueurs_equipe %}
+            <ul class="list-group">
+                {% for joueur in joueurs_equipe %}
+                    <li class="list-group-item bg-secondary text-white">{{ joueur[0] }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Aucun joueur trouvé pour cette équipe.</p>
+        {% endif %}
+
+        <a href="/" class="btn btn-light mt-3">Retour</a>
+    </div>
+</body>
+</html>
