@@ -183,7 +183,7 @@ L’approche adoptée repose sur plusieurs techniques d’optimisation :
 - **Résultat de l’insertion massive :**
   - 1 million de joueurs insérés en quelques minutes, validant la capacité de PostgreSQL à gérer des volumes importants de données de manière efficace.
 
-[![Image](https://i.goopics.net/iur6d4.png)](https://goopics.net/i/iur6d4)
+[![Image](https://i.goopics.net/udt4lk.gif)](https://goopics.net/i/udt4lk)
 
 **Le script est directement disponible dans le dépot GitHub**
 
