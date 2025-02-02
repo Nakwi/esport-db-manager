@@ -82,6 +82,19 @@ J’ai également utilisé **DBdiagram** pour générer le script SQL à partir 
   -  Des **CHECK constraints** évitent les valeurs négatives pour les scores et statistiques.  
   -  Des **index** accélèrent les requêtes fréquentes.  
 
+Exemple création table equipe :
+```sql
+CREATE TABLE equipe (
+  id_equipe SERIAL PRIMARY KEY,
+  nom VARCHAR(255) NOT NULL,
+  historique_victoires INTEGER DEFAULT 0 CHECK (historique_victoires >= 0),
+  historique_defaites INTEGER DEFAULT 0 CHECK (historique_defaites >= 0),
+  id_coach INTEGER,
+  CONSTRAINT fk_coach FOREIGN KEY (id_coach) REFERENCES coach (id_coach) ON DELETE SET NULL
+);
+```
+
+
 L’implémentation complète est disponible sur **GitHub**.  
 
 ---
