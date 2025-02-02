@@ -119,8 +119,49 @@ Flask a été utilisé pour développer une **interface web** permettant de gér
 -  **Consulter les détails d’un match**  
 
 ### 🔗 Connexion avec PostgreSQL  
--  Connexion gérée via **psycopg2**  
--  Gestion des requêtes SQL pour insérer et récupérer les données  
+-  Connexion gérée via **psycopg2**
+  
+  **Code qui gère la connexion**
+
+```python
+import psycopg2
+
+# Configuration de la connexion PostgreSQL
+DB_NAME = "esport_db"
+DB_USER = "***"
+DB_PASSWORD = "***"
+DB_HOST = "localhost"
+
+try:
+    conn = psycopg2.connect(
+        dbname=DB_NAME,
+        user=DB_USER,
+        password=DB_PASSWORD,
+        host=DB_HOST
+    )
+    cur = conn.cursor()
+    print("✅ Connexion réussie à PostgreSQL")
+except Exception as e:
+    print(f"❌ Erreur de connexion à PostgreSQL : {e}")
+
+```
+-  Gestion des requêtes SQL pour insérer et récupérer les données
+
+  **Exemple code Insertion de données (ajout d’un joueur)**
+
+```python
+def ajouter_joueur(pseudonyme, id_role, id_equipe):
+    try:
+        cur.execute(
+            "INSERT INTO joueur (pseudonyme, id_role, id_equipe) VALUES (%s, %s, %s)",
+            (pseudonyme, id_role, id_equipe)
+        )
+        conn.commit()
+        print(f"✅ Joueur {pseudonyme} ajouté avec succès !")
+    except Exception as e:
+        print(f"❌ Erreur lors de l'ajout du joueur : {e}")
+```
+
 
 L’ensemble du code source est disponible dans le **repository GitHub**.  
 
