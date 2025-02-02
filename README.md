@@ -259,6 +259,38 @@ L'ancien schéma relationnel PostgreSQL contenait plusieurs tables distinctes (�
 
 [![Image](https://i.goopics.net/7io7p4.png)](https://goopics.net/i/7io7p4)
 
+
+---
+
+## 🌟 Bonus 2.2 : Migration des données de PostgreSQL vers MongoDB
+
+L’exportation des données de PostgreSQL vers MongoDB a été réalisée à l'aide de **MongoDB Relational Migrator**, un outil officiel de MongoDB permettant de simplifier la conversion des bases relationnelles en bases NoSQL.
+
+### 🔄 Processus de Migration
+
+**Connexion à PostgreSQL**
+
+Une connexion à la base de données PostgreSQL a été établie avec les informations suivante
+
+[![Image](https://i.goopics.net/s7pacj.png)](https://goopics.net/i/s7pacj)
+
+**Connexion à MongoDB**
+
+Un serveur MongoDB a été déployé en local sur Docker, vérification de la connexion :
+
+[![Image](https://i.goopics.net/20u02i.png)](https://goopics.net/i/20u02i)
+
+**Lancement de la migration**
+
+[![Image](https://i.goopics.net/ie6gq8.png)](https://goopics.net/i/ie6gq8)
+[![Image](https://i.goopics.net/3juk9d.png)](https://goopics.net/i/3juk9d)
+
+**Résultat de la migration**
+
+Une fois la migration terminée, une vérification a été effectuée en listant les collections dans la base MongoDB :
+
+[![Image](https://i.goopics.net/v2ujxw.png)](https://goopics.net/i/v2ujxw)
+
 ---
 
 ## 6️⃣ Outils utilisés  
