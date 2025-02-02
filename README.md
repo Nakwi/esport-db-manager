@@ -298,16 +298,22 @@ Une fois la migration terminée, une vérification a été effectuée en listant
 
 ## 6️⃣ Outils utilisés  
 
-### 🏗 Lucidchart – Modélisation du MCD  
-Utilisé pour concevoir le **MCD** et structurer les entités avant de passer au MLD.  
+🏗 **Lucidchart** – Modélisation du MCD  
+*Utilisé pour concevoir le MCD et structurer les entités avant de passer au MLD.*  
 
-### 🎨 DBdiagram – Génération du MLD et du SQL  
-Outil utilisé pour transformer le **MCD** en **MLD** et exporter automatiquement le **script SQL**.  
+🎨 **DBdiagram** – Génération du MLD et du SQL  
+*Outil utilisé pour transformer le MCD en MLD et exporter automatiquement le script SQL.*  
 
-### 🤖 ChatGPT – Apprentissage et accompagnement technique  
-Utilisé pour :  
-- Apprendre l’utilisation de **PostgreSQL** et comprendre ses bonnes pratiques.  
-- Compléter l’**intégration de Flask** avec la base de données.  
+🤖 **ChatGPT** – Apprentissage et accompagnement technique  
+*Utilisé pour :*  
+- Apprendre l’utilisation de PostgreSQL et comprendre ses bonnes pratiques.  
+- Compléter l’intégration de Flask avec la base de données.  
+
+🍃 **MongoDB Compass & PyMongo** – Migration vers MongoDB  
+*Utilisés pour :*  
+- Convertir les données de PostgreSQL vers MongoDB.  
+- Gérer et visualiser les collections de données dans MongoDB.  
+- Automatiser l’insertion et la récupération des données avec PyMongo.  
 
 ---
 
