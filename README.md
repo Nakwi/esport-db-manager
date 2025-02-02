@@ -91,6 +91,8 @@ L’implémentation complète est disponible sur **GitHub**.
 ### 🎯 Objectif  
 Flask a été utilisé pour développer une **interface web** permettant de gérer les équipes, joueurs et matchs plus facilement.  
 
+[![Image](https://i.goopics.net/zyuknp.gif)](https://goopics.net/i/zyuknp)
+
 ### 🌐 Fonctionnalités mises en place  
 - 📋 **Afficher les joueurs d’une équipe**  
 - 🎮 **Ajouter un joueur**  
