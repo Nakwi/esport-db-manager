@@ -41,7 +41,7 @@ La première étape de ce projet consiste à concevoir un **Modèle Conceptuel d
 - Une relation *Appartient* entre **Joueur** et **Équipe** assure cette affiliation unique.  
 
 #### 🎓 Gestion des coachs  
-- Chaque équipe peut être dirigée par **un coach**, mais un coach n’est pas obligatoire (*cardinalité 0,1 côté Coach et 1,1 côté Équipe*).  
+- Chaque équipe peut être dirigée par **un coach**, mais un coach n’est pas obligatoire dans une équipe (*cardinalité 0,1 côté Coach et 1,1 côté Équipe*).  
 - Le coach est défini par son **nom**, son **expérience**, et sa **spécialité**.  
 
 #### ⚔️ Gestion des matchs  
