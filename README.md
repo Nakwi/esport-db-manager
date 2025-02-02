@@ -8,16 +8,16 @@ Ce projet a pour objectif de concevoir une **base de données relationnelle** d�
 
 ### 🎯 Objectifs et fonctionnalités  
 Cette base de données centralisera et organisera les informations essentielles liées aux compétitions esportives. Elle offrira notamment :  
-- 🏅 **La gestion des équipes** : suivi des joueurs, coachs et historique des performances.  
-- ⚔️ **La gestion des matchs** : enregistrement des équipes participantes, des scores et des résultats.  
-- 🎮 **La gestion des joueurs** : stockage des pseudonymes, rôles (capitaine, remplaçant, etc.) et statistiques individuelles.  
+-  **La gestion des équipes** : suivi des joueurs, coachs et historique des performances.  
+-  **La gestion des matchs** : enregistrement des équipes participantes, des scores et des résultats.  
+-  **La gestion des joueurs** : stockage des pseudonymes, rôles (capitaine, remplaçant, etc.) et statistiques individuelles.  
 
 ### 🏗️ Structure du projet  
 Le projet se déroulera en **quatre étapes principales** :  
-1. 📝 **Modélisation Conceptuelle des Données (MCD)** : définition des entités et de leurs relations.  
-2. 🔀 **Modélisation Logique des Données (MLD)** : traduction du MCD en un modèle adapté aux bases relationnelles.  
-3. 🛠 **Création de la base de données sous PostgreSQL** : implémentation du schéma et des relations.  
-4. 🌐 **Intégration avec Flask** : développement d’une interface web pour interagir avec la base de données.  
+1.  **Modélisation Conceptuelle des Données (MCD)** : définition des entités et de leurs relations.  
+2.  **Modélisation Logique des Données (MLD)** : traduction du MCD en un modèle adapté aux bases relationnelles.  
+3.  **Création de la base de données sous PostgreSQL** : implémentation du schéma et des relations.  
+4.  **Intégration avec Flask** : développement d’une interface web pour interagir avec la base de données.  
 
 ---
 
@@ -78,9 +78,9 @@ J’ai également utilisé **DBdiagram** pour générer le script SQL à partir 
 ### 🏗️ Structure de la base de données  
 - **Tables principales** : `equipe`, `joueur`, `match`, `coach`, `role`, `statistiques`.  
 - **Relations et contraintes** :  
-  - 🔗 Les **clés étrangères** assurent l’intégrité des données.  
-  - 🛑 Des **CHECK constraints** évitent les valeurs négatives pour les scores et statistiques.  
-  - 🚀 Des **index** accélèrent les requêtes fréquentes.  
+  -  Les **clés étrangères** assurent l’intégrité des données.  
+  -  Des **CHECK constraints** évitent les valeurs négatives pour les scores et statistiques.  
+  -  Des **index** accélèrent les requêtes fréquentes.  
 
 L’implémentation complète est disponible sur **GitHub**.  
 
@@ -94,15 +94,15 @@ Flask a été utilisé pour développer une **interface web** permettant de gér
 [![Image](https://i.goopics.net/zyuknp.gif)](https://goopics.net/i/zyuknp)
 
 ### 🌐 Fonctionnalités mises en place  
-- 📋 **Afficher les joueurs d’une équipe**  
-- 🎮 **Ajouter un joueur**  
-- 🏆 **Créer un match avec génération aléatoire des scores**  
-- 📊 **Afficher l’historique des matchs**  
-- 🔍 **Consulter les détails d’un match**  
+-  **Afficher les joueurs d’une équipe**  
+-  **Ajouter un joueur**  
+-  **Créer un match avec génération aléatoire des scores**  
+-  **Afficher l’historique des matchs**  
+-  **Consulter les détails d’un match**  
 
 ### 🔗 Connexion avec PostgreSQL  
-- 🔌 Connexion gérée via **psycopg2**  
-- ⚙️ Gestion des requêtes SQL pour insérer et récupérer les données  
+-  Connexion gérée via **psycopg2**  
+-  Gestion des requêtes SQL pour insérer et récupérer les données  
 
 L’ensemble du code source est disponible dans le **repository GitHub**.  
 
